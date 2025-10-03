@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Beautiful!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="screen active">
+        <div class="floating-hearts"></div>
+        <div class="sparkles"></div>
+        
+        <div class="welcome-content">
+            <h1 class="birthday-greeting">Happy Birthday, Beautiful!</h1>
+            <button class="btn btn--primary btn--lg continue-btn" id="continue-btn">
+                Click to Continue ✨
+            </button>
+        </div>
+        
+        <audio id="background-music" loop>
+            <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvGccBDGDze" type="audio/wav">
+        </audio>
+    </div>
+
+    <!-- Interactive Elements Screen -->
+    <div id="interactive-screen" class="screen">
+        <div class="floating-hearts"></div>
+        <div class="sparkles"></div>
+        <div class="floating-petals"></div>
+        
+        <div class="interactive-content">
+            <!-- Characters Section -->
+            <div class="characters-section">
+                <button class="btn btn--primary btn--lg show-characters-btn" id="show-characters-btn">
+                    Show Characters 🎭
+                </button>
+                
+                <div class="characters-container" id="characters-container">
+                    <div class="character character1">
+                        <div class="character-body">👧</div>
+                        <div class="speech-bubble">Happy Birthday!</div>
+                    </div>
+                    <div class="character character2">
+                        <div class="character-body">🧑</div>
+                        <div class="speech-bubble">Wishing you joy!</div>
+                    </div>
+                    <div class="character character3">
+                        <div class="character-body">👦</div>
+                        <div class="speech-bubble">Celebrate today!</div>
+                    </div>
+                </div>
+                
+                <div class="confetti-container" id="confetti-container"></div>
+                <div class="balloons-container" id="balloons-container">
+                    <div class="balloon balloon1">🎈</div>
+                    <div class="balloon balloon2">🎈</div>
+                    <div class="balloon balloon3">🎈</div>
+                    <div class="balloon balloon4">🎈</div>
+                    <div class="balloon balloon5">🎈</div>
+                </div>
+            </div>
+
+            <!-- Birthday Cake Section -->
+            <div class="cake-section">
+                <div class="cake-container">
+                    <div class="cake">
+                        <div class="cake-layer cake-bottom"></div>
+                        <div class="cake-layer cake-middle"></div>
+                        <div class="cake-layer cake-top"></div>
+                        <div class="candles">
+                            <div class="candle">
+                                <div class="candle-stick"></div>
+                                <div class="flame flame1"></div>
+                            </div>
+                            <div class="candle">
+                                <div class="candle-stick"></div>
+                                <div class="flame flame2"></div>
+                            </div>
+                            <div class="candle">
+                                <div class="candle-stick"></div>
+                                <div class="flame flame3"></div>
+                            </div>
+                            <div class="candle">
+                                <div class="candle-stick"></div>
+                                <div class="flame flame4"></div>
+                            </div>
+                            <div class="candle">
+                                <div class="candle-stick"></div>
+                                <div class="flame flame5"></div>
+                            </div>
+                        </div>
+                        <div class="cake-glow"></div>
+                    </div>
+                    
+                    <button class="btn btn--primary btn--lg blow-candles-btn" id="blow-candles-btn">
+                        Blow Out Candles 💨
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Birthday Song Display -->
+            <div class="birthday-song-display" id="birthday-song-display">
+                <h2 class="birthday-song-text">🎵 Happy Birthday to You! 🎵</h2>
+                <div class="musical-notes" id="musical-notes">
+                    <div class="note note1">♪</div>
+                    <div class="note note2">♫</div>
+                    <div class="note note3">♪</div>
+                    <div class="note note4">♬</div>
+                    <div class="note note5">♫</div>
+                    <div class="note note6">♪</div>
+                    <div class="note note7">♬</div>
+                    <div class="note note8">♫</div>
+                </div>
+            </div>
+            
+            <!-- Smoke effects container -->
+            <div class="smoke-container" id="smoke-container"></div>
+            
+            <!-- Fireworks container -->
+            <div class="fireworks-container" id="fireworks-container"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
